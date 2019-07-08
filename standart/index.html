@@ -35,6 +35,7 @@
         В некоторых местах могут появиться иероглифы, это баг, нужно просто обновить ссылку.
     </small><br><br>
         <h3 align="center"><b>Содержание</b></h3>
+            <a href="#end" accesskey="">Вниз</a><br>
             <a href="#stocks"><b>Лайфхаки</b></a><br/>
             <a href="#introduction"><b align="left">Введение</b></a>
         <hr/>
@@ -2022,37 +2023,71 @@
             без использования каскадных таблиц стилей и тем более серверной части. Не вижу смысла добавлять стили. Целью было чтобы максимально был похож на бумажный вариант (оригинал).</i>
     </section>
 
-    <form action="#" method="post">
     <p>
-        <label>
-            <strong>Не распространять данный файл, а также ссылку посторонним людям, которые не работают в Gippo. 
-                Строго конфиденциально! Совершенно тайно, доступ имеют только сотрудники компании! В случае нарушения правил,
-                компания оставляет за собой принять меры. На сайт встроен специальный скрытый скрипт, который считывает данные о пользователе,
-                определеяет IP-адрес, далее пробивает злектронную почту и попытается найти номер телефона и ФИО.
-            </strong><br>
-          <input type="checkbox" name="terms">
-          Я согласен с условиями использования<br>
-          <input type="submit" name="sub" value="Отправить">
-        </label>
-      </p>
-    </form>
-
-    <a download href="stan/standartgippo.docx">Скачать стандарт</a>
-
-    <form enctype="multipart/form-data" method="post">
-        <p><input type="file" name="f" multiple accept="image/*,image/jpeg">
-        <input type="submit" value="Отправить"></p>
-    </form>
+        <strong>Не распространять данный файл, а также ссылку посторонним людям, которые не работают в Gippo. 
+            Строго конфиденциально! Совершенно тайно, доступ имеют только сотрудники компании! В случае нарушения правил,
+            компания оставляет за собой принять меры. На сайт встроен специальный скрытый скрипт, который считывает данные о пользователе,
+            определеяет IP-адрес, далее пробивает электронную почту и попытается найти номер телефона и ФИО.
+        </strong><br>
+        <input type="checkbox" name="terms">Я согласен с условиями использования
+        <input type="submit" name="sub" value="Отправить">
+        <a download href="stan/standartgippo.docx">Скачать стандарт</a><br>
+    </p>
 
     <div>
         <label>
-            <span>Ваш комментарий:</span><br/>
+            <span><strong>Ваш комментарий:</strong></span><br/>
             <form>
                <textarea name="comment" cols="50 rows="50" maxlength="100">Мааа Айдос, куштыыы жасапсын, тема го))))</textarea><br/>
             <input type="reset" value="Очистить"> 
             </form>
         </label>
     </div>
+
+      <form action="" method="POST" novalidate>
+        <p><strong>Имя пользователя:</strong>
+          <input name="Имя пользователя" placeholder="Имя пользователя" maxlength="20" required autocomplete><br>
+          <strong>Фамилия пользователя:</strong>
+          <input name="Фамилия пользователя" placeholder="Фамилия пользователя" maxlength="20" required autocomplete><br>
+          <strong>Пароль:</strong>
+          <input type="password" name="Пароль" placeholder="Введите пароль" maxlength="10" size="20"><br>
+          <input type="reset">
+          <input type="submit" value="Отправить"></p>
+      </form>
+
+          <form action="mailto:#@gmail.com" enctype="text/plain">
+            <label for="email">Ваш электронный адрес:</label>
+            <input type="text" id="email" name="emails" placeholder="email@gmail.com">
+            <input type="submit" value="Войти">
+          </form >
+        
+          <form>
+              <p><strong>Павильон:</strong><br>
+                <input type="radio" name="a" value="1"checked autofocus>Орбита<br>
+                <input type="radio" name="a" value="2">Баумана<br>
+                <input type="radio" name="a" value="3">Рамстор<br>
+                <input type="radio" name="a" value="4">Ертек<br>
+                <input type="radio" name="a" value="5">М3<br>
+                <input type="radio" name="a" value="6">М2<br>
+                <input type="radio" name="a" value="7">Сарыарка<br>
+                <input type="radio" name="a" value="8">М1<br>
+                <input type="radio" name="a" value="9">Роза<br>
+                <input type="radio" name="a" value="10">Жетысу<br>
+                <input type="radio" name="a" value="11">Атакент<br>
+                <input type="radio" name="a" value="12">Каменка<br>
+                <input type="radio" name="a" value="13">М5<br>
+                <input type="radio" name="a" value="14">М4<br>
+                <input type="radio" name="a" value="15">Мерей<br>
+                <input type="radio" name="a" value="16">Айнабулак<br>
+                <input type="radio" name="a" value="17">Автодом<br>
+                <input type="radio" name="a" value="18">Даймонд<br>
+                <input type="radio" name="a" value="19">Пушкина<br>
+                <input type="radio" name="a" value="20">Сейфуллина<br>
+                <input type="radio" name="a" value="21">Шага<br>
+                <input type="radio" name="a" value="22">Резерв<br>
+                <input type="submit" value="Отправить">
+            </p>
+          </form>
 
     <p>Статус выполнения проекта:
         <progress min="0" max="100" value="100">
@@ -2064,14 +2099,13 @@
         <p>Кайдар Айдос</p>
     </summary>
     </details>
-    <a href="#header123">На главную страницу...</a>
-    <br>
+    <a href="#header123">На главную страницу...</a><br><br>
     <div>
         <address>Almaty, Kazakhstan</address>
         <address>+77071986878</address>
         <a href="tel:+77071986878">Связаться с автором</a>    
     </div>
-    <p>Copyright | <time datetime="2019">2019</time> Orbita </p><br/>
+    <p id="end">Copyright | <time datetime="2019">2019</time> Orbita </p><br/>
     
 </footer>
 
